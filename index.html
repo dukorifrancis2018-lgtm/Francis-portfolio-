@@ -1,366 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Glow Beauty Hub | Beauty & Skincare</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Vision Moments | Photography & Video</title>
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        .navbar {
+            background: #000;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.65),
+                    rgba(0,0,0,0.65)
+                ),
+                url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .btn-gold {
+            background: #d4af37;
+            color: #000;
+            font-weight: bold;
+            border: none;
+        }
+
+        .btn-gold:hover {
+            background: #b99520;
+            color: #000;
+        }
+
+        .section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-weight: 800;
+            margin-bottom: 40px;
+        }
+
+        .service-card {
+            background: #1d1d1d;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .video-box {
+            background: #222;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contact-section {
+            background: #1b1b1b;
+        }
+
+        footer {
+            background: #000;
+        }
+
+    </style>
+
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
 
-    .hero {
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-        background: linear-gradient(135deg, #fff0f5, #ffffff);
-    }
 
-    .hero h1 {
-        color: #8b2455;
-        font-weight: 800;
-    }
-
-    .section-title {
-        color: #8b2455;
-        font-weight: 800;
-    }
-
-    .service-card {
-        border: none;
-        border-radius: 15px;
-        transition: 0.3s;
-    }
-
-    .service-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .product-box {
-        height: 220px;
-        border-radius: 15px;
-        background: #f8d7e5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 50px;
-    }
-
-    .btn-beauty {
-        background: #8b2455;
-        color: white;
-        border: none;
-    }
-
-    .btn-beauty:hover {
-        background: #6f1c43;
-        color: white;
-    }
-</style>
 <body>
 
+
 <!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-dark">
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-            Glow Beauty Hub
+
+        <a class="navbar-brand fw-bold"
+           href="#">
+
+            Vision Moments
+
         </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#services">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#gallery">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+   href="#booking">
+    Contact
+</a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
+
 </nav>
 
-<!-- HERO -->
-<section class="py-5 bg-light">
-    <div class="container text-center">
 
-        <h1 class="display-5 fw-bold">
-            Look Beautiful. Feel Confident.
+<!-- HERO -->
+
+<section
+    id="home"
+    class="hero">
+
+    <div class="container">
+
+        <h1>
+            We Capture Your
+            Precious Moments
         </h1>
 
-        <p class="lead mt-3">
-            Quality beauty products and professional beauty services.
+        <p class="mt-3">
+
+            Professional Photography
+            & Video Production
+
         </p>
 
         <a
-            href="https://wa.me/2348000000000"
-            class="btn btn-success btn-lg mt-3">
-            Chat on WhatsApp
+            href="https://wa.me/2348000000000?text=Hello%20Vision%20Moments,%20I%20would%20like%20to%20book%20a%20photo%20or%20video%20shoot."
+
+            class="btn btn-gold btn-lg mt-3">
+
+            Book a Session
+
         </a>
 
     </div>
+
 </section>
+
+
 
 <!-- SERVICES -->
-<section class="py-5">
+
+<section
+    id="services"
+    class="section">
+
     <div class="container">
 
-        <h2 class="text-center fw-bold mb-4">
+        <h2 class="text-center section-title">
+
             Our Services
+
         </h2>
+
 
         <div class="row g-4">
 
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body text-center">
-                        <h4>Skincare</h4>
-                        <p>
-                            Quality skincare products for healthy,
-                            beautiful-looking skin.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
+
+                <div class="card service-card h-100 p-4">
+
                     <div class="card-body text-center">
-                        <h4>Hair Care</h4>
-                        <p>
-                            Hair products and beauty solutions
-                            for different hair types.
+
+                        <h3>
+                            📸 Photography
+                        </h3>
+
+                        <p class="mt-3">
+
+                            Professional photography
+                            for weddings, birthdays,
+                            portraits and special events.
+
                         </p>
+
                     </div>
+
                 </div>
+
             </div>
 
+
+
             <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
+
+                <div class="card service-card h-100 p-4">
+
                     <div class="card-body text-center">
-                        <h4>Beauty Training</h4>
-                        <p>
-                            Practical training for people who want
-                            to start a beauty business.
+
+                        <h3>
+                            🎥 Video Shooting
+                        </h3>
+
+                        <p class="mt-3">
+
+                            High-quality video coverage
+                            for events, businesses,
+                            weddings and celebrations.
+
                         </p>
+
                     </div>
+
                 </div>
+
             </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 p-4">
+
+                    <div class="card-body text-center">
+
+                        <h3>
+                            🎬 Video Production
+                        </h3>
+
+                        <p class="mt-3">
+
+                            Creative video production,
+                            editing and promotional
+                            content for businesses.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
 
     </div>
+
 </section>
-<!-- PRODUCTS -->
-<section class="py-5">
+
+
+
+<!-- GALLERY -->
+
+<section
+    id="gallery"
+    class="section bg-dark">
+
     <div class="container">
 
-        <h2 class="text-center section-title mb-4">
-            Our Products
+        <h2 class="text-center section-title">
+
+            Our Gallery
+
         </h2>
 
-        <div class="row g-4">
 
-            <!-- Product 1 -->
+        <div class="row g-4 gallery">
+
+
             <div class="col-md-4">
-                <div class="card service-card h-100 shadow-sm">
 
-                   <div class="product-box">
+           <a
+    href="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=90"
+    target="_blank">
+
     <img
-        src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80"
-        alt="Body cream"
-        style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
-</div>
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+        alt="Wedding photography">
 
-                    <div class="card-body text-center">
-
-                        <h4 class="fw-bold">
-                            Body Cream
-                        </h4>
-
-                        <p class="text-muted">
-                            Nourishing body cream for
-                            soft and healthy-looking skin.
-                        </p>
-
-                        <h5 class="fw-bold">
-                            ₦8,000
-                        </h5>
-
-                        <a
-    href="https://wa.me/2348000000000?text=Hello%20Glow%20Beauty%20Hub,%20I%20want%20to%20order%20the%20Body%20Cream."
-    class="btn btn-beauty mt-2">
-    Order Now
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Product 2 -->
-            <div class="col-md-4">
-                <div class="card service-card h-100 shadow-sm">
-
-                    <div class="product-box">
-    <img
-        src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?auto=format&fit=crop&w=800&q=80"
-        alt="Liquid soap"
-        style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
-</div>
-
-                    <div class="card-body text-center">
-
-                        <h4 class="fw-bold">
-                            Liquid Soap
-                        </h4>
-
-                        <p class="text-muted">
-                            Quality liquid soap suitable for
-                            homes, offices and businesses.
-                        </p>
-
-                        <h5 class="fw-bold">
-                            ₦5,000
-                        </h5>
-
-                        <a
-    href="https://wa.me/2348000000000?text=Hello%20Glow%20Beauty%20Hub,%20I%20want%20to%20order%20the%20Liquid%20Soap."
-    class="btn btn-beauty mt-2">
-    Order Now
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Product 3 -->
-            <div class="col-md-4">
-                <div class="card service-card h-100 shadow-sm">
-
-                    <div class="product-box">
-    <img
-        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
-        alt="Beauty products"
-        style="width:100%; height:100%; object-fit:cover; border-radius:15px;">
-</div>
-
-                    <div class="card-body text-center">
-
-                        <h4 class="fw-bold">
-                            Beauty Products
-                        </h4>
-
-                        <p class="text-muted">
-                            Carefully selected beauty products
-                            for your everyday needs.
-                        </p>
-
-                        <h5 class="fw-bold">
-                            From ₦5,000
-                        </h5>
-
-                        <a
-    href="https://wa.me/2348000000000?text=Hello%20Glow%20Beauty%20Hub,%20I%20want%20to%20make%20an%20enquiry%20about%20your%20beauty%20products."
-    class="btn btn-beauty mt-2">
-    Order Now
 </a>
 
-                    </div>
-                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+                <a
+    href="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=90"
+    target="_blank">
+
+    <img
+        src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80"
+        alt="Wedding couple">
+
+</a>
+            </div>
+
+
+            <div class="col-md-4">
+
+                <a
+    href="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1600&q=90"
+    target="_blank">
+
+    <img
+        src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80"
+        alt="Photography">
+
+</a>
+            </div>
+
+
+            <div class="col-md-4">
+
+                <a
+    href="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1600&q=90"
+    target="_blank">
+
+    <img
+        src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80"
+        alt="Event photography">
+
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <a
+    href="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1600&q=90"
+    target="_blank">
+
+    <img
+        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
+        alt="Wedding event">
+
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <a
+    href="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1600&q=90"
+    target="_blank">
+
+    <img
+        src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80"
+        alt="Wedding celebration">
+
+</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PHOTO VIEWER -->
+
+<div
+    class="modal fade"
+    id="photoModal"
+    tabindex="-1"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+
+        <div class="modal-content bg-dark border-0">
+
+            <div class="modal-header border-0">
+
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+                <a href="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=90"
+   target="_blank">
+
+    <img
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+        alt="Wedding photography">
+
+                </a>
+
             </div>
 
         </div>
 
     </div>
-</section>
-<!-- ABOUT -->
-<section class="py-5 bg-light">
-    <div class="container text-center">
-
-        <h2 class="fw-bold">
-            About Us
-        </h2>
-
-        <p class="mt-3">
-            Glow Beauty Hub is committed to providing quality
-            beauty products and services to customers.
-        </p>
-
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section class="py-5 bg-light">
-    <div class="container">
-
-        <h2 class="text-center section-title mb-4">
-            Contact Us
-        </h2>
-
-        <div class="row g-4 align-items-center">
-
-            <div class="col-md-6">
-
-                <h3 class="fw-bold">
-                    Let's Talk
-                </h3>
-
-                <p class="text-muted">
-                    Have a question about our products or services?
-                    Contact us today and we'll be happy to help.
-                </p>
-
-                <p>
-                    <strong>📞 Phone:</strong>
-                    +234 800 000 0000
-                </p>
-
-                <p>
-                    <strong>📍 Location:</strong>
-                    Port Harcourt, Rivers State, Nigeria
-                </p>
-
-                <p>
-                    <strong>📧 Email:</strong>
-                    hello@glowbeautyhub.com
-                </p>
-<div class="mt-4">
-
-    <h5 class="fw-bold">
-        Follow Us
-    </h5>
-
-    <a
-        href="#"
-        class="btn btn-dark me-2">
-        Facebook
-    </a>
-
-    <a
-        href="#"
-        class="btn btn-danger me-2">
-        Instagram
-    </a>
-
-    <a
-        href="#"
-        class="btn btn-dark">
-        TikTok
-    </a>
 
 </div>
+
+<!-- VIDEO -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="text-center section-title">
+
+            Video Production
+
+        </h2>
+
+
+        <div class="video-box">
+
+            <h3>
+                🎥 Professional Video Coverage
+            </h3>
+
+            <p class="mt-3">
+
+                From weddings and birthdays
+                to business promotions,
+                we create videos that tell
+                your story.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/2348000000000?text=Hello%20Vision%20Moments,%20I%20need%20your%20video%20shooting%20service."
+
+                class="btn btn-gold">
+
+                Request Video Service
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRICING -->
+
+<section class="section bg-dark">
+
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            Our Packages
+        </h2>
+
+        <p class="text-center mb-5">
+            Choose a package that fits your occasion.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Package 1 -->
+
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 p-4 text-center">
+
+                    <h3>
+                        Basic
+                    </h3>
+
+                    <h2 class="my-3">
+                        ₦50,000
+                    </h2>
+
+                    <p>
+                        ✔ 1 Hour Photography
+                    </p>
+
+                    <p>
+                        ✔ 30 Edited Photos
+                    </p>
+
+                    <p>
+                        ✔ Digital Delivery
+                    </p>
+
+                    <a
+                        href="https://wa.me/2348000000000?text=Hello%20Vision%20Moments,%20I%20am%20interested%20in%20the%20Basic%20Photography%20Package."
+
+                        class="btn btn-gold mt-3">
+
+                        Book Package
+
+                    </a>
+
+                </div>
+
             </div>
 
 
-            <div class="col-md-6">
+            <!-- Package 2 -->
 
-                <div class="card border-0 shadow-sm p-4">
+            <div class="col-md-4">
 
-                    <h4 class="fw-bold mb-3">
-                        Send Us a Message
-                    </h4>
+                <div class="card service-card h-100 p-4 text-center">
+
+                    <h3>
+                        Standard
+                    </h3>
+
+                    <h2 class="my-3">
+                        ₦100,000
+                    </h2>
+
+                    <p>
+                        ✔ 3 Hours Coverage
+                    </p>
+
+                    <p>
+                        ✔ 80 Edited Photos
+                    </p>
+
+                    <p>
+                        ✔ Short Highlight Video
+                    </p>
 
                     <a
-                        href="https://wa.me/2348000000000?text=Hello%20Glow%20Beauty%20Hub,%20I%20would%20like%20to%20make%20an%20enquiry."
-                        class="btn btn-success btn-lg w-100">
+                        href="https://wa.me/2348000000000?text=Hello%20Vision%20Moments,%20I%20am%20interested%20in%20the%20Standard%20Package."
 
-                        💬 Chat on WhatsApp
+                        class="btn btn-gold mt-3">
+
+                        Book Package
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Package 3 -->
+
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 p-4 text-center">
+
+                    <h3>
+                        Premium
+                    </h3>
+
+                    <h2 class="my-3">
+                        ₦200,000
+                    </h2>
+
+                    <p>
+                        ✔ Full Event Coverage
+                    </p>
+
+                    <p>
+                        ✔ 150+ Edited Photos
+                    </p>
+
+                    <p>
+                        ✔ Full Event Video
+                    </p>
+
+                    <a
+                        href="https://wa.me/2348000000000?text=Hello%20Vision%20Moments,%20I%20am%20interested%20in%20the%20Premium%20Package."
+
+                        class="btn btn-gold mt-3">
+
+                        Book Package
 
                     </a>
 
@@ -371,14 +656,363 @@
         </div>
 
     </div>
+
+</section>
+<!-- TESTIMONIALS -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            What Our Clients Say
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 p-4">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            ⭐⭐⭐⭐⭐
+                        </h5>
+
+                        <p class="mt-3">
+                            "The pictures from my wedding were
+                            absolutely beautiful. Every special
+                            moment was captured perfectly."
+                        </p>
+
+                        <strong>
+                            — Sarah
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 p-4">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            ⭐⭐⭐⭐⭐
+                        </h5>
+
+                        <p class="mt-3">
+                            "Very professional service.
+                            The video quality was excellent
+                            and delivery was fast."
+                        </p>
+
+                        <strong>
+                            — Michael
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 p-4">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            ⭐⭐⭐⭐⭐
+                        </h5>
+
+                        <p class="mt-3">
+                            "I loved the creativity and
+                            attention to detail. I definitely
+                            recommend Vision Moments."
+                        </p>
+
+                        <strong>
+                            — Grace
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- CONTACT -->
+
+<!-- VIDEO SHOWCASE -->
+
+<section
+    id="contact"
+    class="section contact-section">
+
+        <h2 class="text-center section-title">
+            Video Showcase
+        </h2>
+
+        <p class="text-center text-muted mb-4">
+            Watch some of our latest video productions.
+        </p>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="video-box">
+
+                    <video
+                        controls
+                        width="100%"
+                        poster="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1200&q=80"
+                        style="border-radius:15px;">
+
+                        <source
+                            src="wedding-video.mp4"
+
+                        Your browser does not support
+                        HTML5 video.
+
+                    </video>
+
+                    <h4 class="mt-4">
+                        Professional Event Coverage
+                    </h4>
+
+                    <p>
+                        Weddings • Birthdays • Corporate Events
+                        • Music Videos • Business Promotions
+                    </p>
+
+                    <a
+                        href="https://wa.me/2348000000000?text=Hello%20Vision%20Moments,%20I%20would%20like%20to%20book%20a%20video%20shoot."
+
+                        class="btn btn-gold">
+
+                        Book Video Shooting
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- BOOKING FORM -->
+
+<section
+    id="booking"
+    class="section bg-light text-dark">
+
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            Book Your Session
+        </h2>
+
+        <p class="text-center mb-4">
+            Tell us about your event and we'll get back to you.
+        </p>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-7">
+
+                <div class="card shadow-sm border-0 p-4">
+
+                    <form
+                        onsubmit="sendBooking(event)">
+
+                        <div class="mb-3">
+
+                            <label class="form-label fw-bold">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="bookingName"
+                                class="form-control"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label fw-bold">
+                                Event Type
+                            </label>
+
+                            <select
+                                id="bookingEvent"
+                                class="form-select"
+                                required>
+
+                                <option value="">
+                                    Select event
+                                </option>
+
+                                <option>Wedding</option>
+                                <option>Birthday</option>
+                                <option>Portrait</option>
+                                <option>Corporate Event</option>
+                                <option>Video Shooting</option>
+                                <option>Other</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label fw-bold">
+                                Event Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="bookingDate"
+                                class="form-control"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label fw-bold">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="bookingMessage"
+                                class="form-control"
+                                rows="4"
+                                placeholder="Tell us about your event..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-success btn-lg w-100">
+
+                            💬 Send Booking to WhatsApp
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
+
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3">
+
+<footer class="text-center py-4">
+
     <p class="mb-0">
-        © 2026 Glow Beauty Hub. All Rights Reserved.
+
+        © 2026 Vision Moments.
+        All Rights Reserved.
+
     </p>
+
 </footer>
 
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a
+    href="https://wa.me/2348000000000?text=Hello%20Vision%20Moments,%20I%20would%20like%20to%20make%20a%20booking."
+    target="_blank"
+    style="
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        width:60px;
+        height:60px;
+        background:#25D366;
+        color:white;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-decoration:none;
+        font-size:28px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.3);
+        z-index:9999;
+    ">
+
+    💬
+
+</a>
+  <script>
+
+    const galleryImages =
+        document.querySelectorAll(".gallery img");
+
+    const largePhoto =
+        document.getElementById("largePhoto");
+
+    galleryImages.forEach(function(image) {
+
+        image.style.cursor = "pointer";
+
+        image.addEventListener("click", function() {
+
+            largePhoto.src = image.src;
+
+            const modal =
+                new bootstrap.Modal(
+                    document.getElementById("photoModal")
+                );
+
+            modal.show();
+
+        });
+
+    });
+
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
 </body>
+
+</html>
+</body>
+
 </html>
